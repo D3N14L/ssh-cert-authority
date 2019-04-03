@@ -516,7 +516,7 @@ encrypted via KMS and then written to disk in encrypted form. ::
     environment_name=production
     ssh-cert-authority encrypt-key --generate-rsa \
         --key-id arn:aws:kms:us-west-2:881577346222:key/d1401480-8220-4bb7-a1de-d03dfda44a13 \
-        --output ca-key-${environment}.kms
+        --output ca-key-${environment_name}.kms
 
 The output of this is two files: ``ca-key-production.kms`` and
 ``ca-key-production.kms.pub``. The kms file should be referenced in the ssh
